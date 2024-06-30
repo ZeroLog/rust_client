@@ -1,7 +1,7 @@
 
 use std::io::{self, BufRead, BufReader, BufWriter, Write};
 use std::net::TcpStream;
-
+ 
 fn main() -> std::io::Result<()> {
     let stream = TcpStream::connect("127.0.0.1:4545")?;
     let mut reader = BufReader::new(stream.try_clone()?);
