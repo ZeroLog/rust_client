@@ -9,7 +9,7 @@ fn main() -> std::io::Result<()> {
     let stdin = io::stdin();
     let mut input = String::new();
     let mut response = String::new();
-    
+     
     loop {
 
         input.clear();
